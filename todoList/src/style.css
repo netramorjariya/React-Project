@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:gray;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-height: 600px;
+  overflow-y: auto;
+  width: 80%;
+  background: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='number'] {
+  padding: 10px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+button.add-btn {
+  background-color: #28a745;
+  margin-bottom: 10px;
+}
+
+button.add-btn:hover {
+  background-color: #218838;
+}
+
+button.edit-btn {
+  background-color: #007bff;
+}
+
+button.edit-btn:hover {
+  background-color: #0069d9;
+}
+
+button.delete-btn {
+  background-color: #dc3545;
+}
+
+button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* User List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  background-color: #28a745;
+}
+
+.toggle-btn.inactive {
+  background-color: #dc3545;
+}
+
+/* Data Display */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+table th, table td {
+  border: 1px solid black;
+  padding: 12px 15px;
+}
+
+table th {
+  background-color: #f4f4f9;
+  color: #333;
+  font-weight: bold;
+}
+
+table tr:nth-child() {
+  background-color: black;
+}
+
+button:nth-child(1) {
+  background-color: #4CAF50;
+  color: white;
+  margin-right: 8px;
+}
+
+button:nth-child(2) {
+  background-color: #2196F3;
+  color: white;
+  margin-right: 8px;
+}
+
+button:nth-child(3) {
+  background-color: #f44336;
+  color: white;
+}
